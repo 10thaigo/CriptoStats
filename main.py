@@ -66,7 +66,7 @@ async def data(ctx, geckoid = '', currency = ''):
 		data = requests.get('https://api.coingecko.com/api/v3/coins/'+existe, headers={"accept" : "application/json"})
 		w = data.json()
 		x = datetime.datetime.now()
-		embed = discord.Embed(title=w['name'] + ' ('+currency.upper()+')', color=0xffa500)
+		embed = discord.Embed(title=w['name'] + ' ('+currency.upper()+')', color=0xFFFFFF)
 		embed.set_thumbnail(url=w['image']['small'])
 		embed.add_field(name='Average price: '+ str(w['market_data']['current_price'][currency]) + ' ' + currency.upper(), value='᲼', inline=False)
 		embed.add_field(name='Market cap: '+ str(w['market_data']['market_cap'][currency]) + ' ' + currency.upper(), value='᲼', inline=True)
