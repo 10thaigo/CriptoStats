@@ -58,7 +58,7 @@ async def data(ctx, geckoid = '', currency = ''):
 		await ctx.send('You must enter a cryptocurrency ID. Example: btc / eth / ltc...')
 	elif(not currency):
 		await ctx.send('You must enter a currency. Example: USD / EUR / BTC ...')
-	elif(cryptoExists(geckoid) == -1):
+	elif(existe == -1):
 		await ctx.send('That cryptocurrency could not be found.')
 	elif(currencyExists(currency) == -1):
 		await ctx.send('Invalid currency. Use c!currencies to see the list of currencies.')
