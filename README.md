@@ -1,4 +1,4 @@
-# CryptoStats
+# CriptoStats
 Bot de discord para obtener información de criptomonedas</br></br>
 
 Hecho en Python, para obtener los datos de las criptomonedas se hace uso de la API gratuita de Coingecko.</br>
